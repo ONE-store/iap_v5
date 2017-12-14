@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="iap_plugin_v17.00.00_20171212">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/iap_plugin_v17.00.00_20171212.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

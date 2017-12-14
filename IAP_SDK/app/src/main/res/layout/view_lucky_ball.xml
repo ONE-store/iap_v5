@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="70dp"
+              android:gravity="center"
+              android:orientation="horizontal">
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_first_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_first_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_second_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_second_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_third_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_third_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_fourth_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_fourth_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_fifth_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_fifth_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        style="@style/lucky_ball_rl_style">
+
+        <ImageView
+            android:id="@+id/iv_sixth_number"
+            style="@style/lucky_ball_iv_style"/>
+
+        <TextView
+            android:id="@+id/tv_sixth_number"
+            style="@style/lucky_ball_tv_style"/>
+    </RelativeLayout>
+
+</LinearLayout>

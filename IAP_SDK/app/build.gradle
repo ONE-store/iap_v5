@@ -1,0 +1,77 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'signkey01'
+            keyPassword 'signkey01'
+            storeFile file('../signkey01.jks')
+            storePassword 'signkey01'
+        }
+    }
+
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        applicationId "com.onestore.iap.sample"
+        minSdkVersion 14
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            applicationVariants.all { variant ->
+                renameAPK(variant, 'release', applicationId)
+            }
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
+    productFlavors {
+        sample {
+            signingConfig signingConfigs.release
+        }
+    }
+
+//    sourceSets {
+//        sample {
+//            manifest.srcFile "src/main/AndroidManifest.xml"
+//            java.srcDirs = ["src/main/java"]
+//            res.srcDirs = ["src/main/res"]
+//        }
+//        serverTest {
+//            manifest.srcFile "src/apicall/AndroidManifest.xml"
+//            java.srcDirs = ["src/apicall/java"]
+//            res.srcDirs = ["src/apicall/res"]
+//        }
+//    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.code.gson:gson:2.7'
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:25.0.0'
+}
+
+def renameAPK(variant, buildType, applicationId) {
+    variant.outputs.each { output ->
+        def formattedDate = new Date().format('yyMMdd_HHmm')
+        def name = "inapp"
+        def pkgName = "sample"
+        def version = "17.00"
+        def file = output.packageApplication.outputFile
+        def fileName = name + "_v" + version + "_" + applicationId + "_" + formattedDate + ".apk"
+        output.packageApplication.outputFile = new File(file.parent, fileName)
+    }
+}

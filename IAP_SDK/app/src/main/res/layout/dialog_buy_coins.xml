@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:text="Buy coins"
+            android:textColor="@color/color_000000"
+            android:textSize="15dp"/>
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/icon_x"/>
+    </RelativeLayout>
+
+    <ImageView
+        style="@style/default_divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/btn_buy_coin_5"
+            style="@style/coin_buy_default"
+            android:text="@string/btn_buy_5_coins"/>
+
+        <TextView
+            android:id="@+id/btn_buy_coin_10"
+            style="@style/coin_buy_default"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_buy_10_coins"/>
+
+        <TextView
+            android:id="@+id/btn_buy_coin_60"
+            style="@style/coin_buy_default"
+            android:layout_marginTop="10dp"
+            android:text="@string/btn_buy_60_coins"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_buy_coin_auto"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/common_box_bg"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/btn_buy_unlimited"
+                    android:textColor="@color/color_000000"
+                    android:textSize="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/btn_buy_unlimited_desc"
+                    android:textColor="@color/color_666666"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
