@@ -5,7 +5,8 @@ ONE 스토어 인앱결제(이하 IAP)는 ONE스토어 이용자들이 앱 내�
 다음은 원스토어 인앱결제의 서비스 구조를 나타낸 것이다.
 
 ![enter image description here]
-(https://i.imgur.com/eNCe6ZY.png "ONE store IAP Overview.png")
+(https://lh3.googleusercontent.com/-3cXqpbmAXrI/V4Sxzil98qI/AAAAAAAAe5A/E7b5TIV55WIKkduLAP8qWBYTtnBmie_4gCKgB/s0/iapOverview.png "iapOverview.png")
+
 
 ![enter image description here](https://lh3.googleusercontent.com/-3cXqpbmAXrI/V4Sxzil98qI/AAAAAAAAe5A/E7b5TIV55WIKkduLAP8qWBYTtnBmie_4gCKgB/s0/iapOverview.png "iapOverview.png")
 
