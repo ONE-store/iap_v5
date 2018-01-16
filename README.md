@@ -8,7 +8,7 @@ ONE 스토어 인앱결제(이하 IAP)는 ONE스토어 이용자들이 앱 내�
 (https://lh3.googleusercontent.com/-3cXqpbmAXrI/V4Sxzil98qI/AAAAAAAAe5A/E7b5TIV55WIKkduLAP8qWBYTtnBmie_4gCKgB/s0/iapOverview.png "iapOverview.png")
 
 
-![enter image description here](https://lh3.googleusercontent.com/-3cXqpbmAXrI/V4Sxzil98qI/AAAAAAAAe5A/E7b5TIV55WIKkduLAP8qWBYTtnBmie_4gCKgB/s0/iapOverview.png "iapOverview.png")
+![enter image description here](https://i.imgur.com/eNCe6ZY.png "iapOverview.png")
 
 IAP 모듈은 IAP SDK(In-App Purchase Software Development Kit)라는 java 개발 라이브러리 형태로 제공된다. 개발사 앱에 SDK를 적용한 후 인앱결제 관련 함수를 호출하면 IAP서버로 요청이 전달된다. IAP 서버는 구매 요청에 대한 결과를 JSON 형태의 응답 데이터를 생성하여 개발자 앱으로 전송한다. 
 
