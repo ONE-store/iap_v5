@@ -2,8 +2,6 @@
 
 ONE 스토어 인앱결제(이하 IAP)는 ONE스토어 이용자들이 앱 내에서 구입할 수 있는 별도 인앱상품을 구매하기 위한 인증 및 결제 시스템이다. 개발사 앱에 IAP 모듈을 적용하면 인앱상품 이용 권한 및 결제 요청 시 ONEstore service 앱에서 해당 상품을 확인하여 결제를 수행한다. 또한 ONE스토어 앱를 통해 인앱상품을 관리하고 결제 내역을 확인할 수 있다.
 
-다음은 원스토어 인앱결제의 서비스 구조를 나타낸 것이다.
-
 ![enter image description here]
 (https://wiki.onestorecorp.com/download/attachments/43712934/image2017-12-8_11-25-10.png?version=1&modificationDate=1512699911000&api=v2 "iapOverview.png")
 
