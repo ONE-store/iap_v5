@@ -4,9 +4,9 @@
 
 If you want to use this application to test the onestore IAP, you must do the following:
 
-1. Rename package name (applicationId in gradle)
+* Rename package name (applicationId in gradle)
 
-* The default package name ('com.onestore.iap.sample') is not available. So you need to change it to something else.
+** The default package name ('com.onestore.iap.sample') is not available. So you need to change it to something else.
 
 
 2. Add the product name to the development center using the guide below.
