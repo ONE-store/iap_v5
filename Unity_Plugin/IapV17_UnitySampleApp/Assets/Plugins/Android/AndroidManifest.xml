@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.onestore.iap.sdk.unity"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    <meta-data
+        android:name="iap:api_version"
+        android:value="5" />
+
+    <application
+        android:allowBackup="true"
+        android:supportsRtl="true" >
+        <activity android:name="com.onestore.iap.sdk.unity.IapUnityPluginActivity"
+            android:configChanges="locale|fontScale|keyboard|keyboardHidden|layoutDirection|mcc|mnc|navigation|orientation|screenLayout|screenSize|smallestScreenSize|touchscreen|uiMode"
+                  android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:name="com.unity3d.player.UnityPlayerActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
+            <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
