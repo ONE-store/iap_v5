@@ -29,3 +29,8 @@ If you want to use this application to test the onestore IAP, you must do the fo
 5.  Use the guide below to change your account to SENDBOX mode.
 
     * guide : https://dev.onestore.co.kr/devpoc/reference/view/IAP_v17_06_test 
+
+
+6. If you want to see guide of the Unity sdk, click below link. 
+
+    * guide : https://dev.onestore.co.kr/devpoc/reference/view/IAP_v17_11_unity
