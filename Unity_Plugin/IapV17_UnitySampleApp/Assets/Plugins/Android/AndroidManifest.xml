@@ -3,9 +3,6 @@
     package="com.onestore.iap.sdk.unity"
     android:versionCode="1"
     android:versionName="1.0" >
-    <meta-data
-        android:name="iap:api_version"
-        android:value="5" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +18,10 @@
             <meta-data android:name="unityplayer.UnityActivity" android:value="true" />
             <meta-data android:name="unityplayer.ForwardNativeEventsToDalvik" android:value="true" />
         </activity>
+
+        <meta-data
+            android:name="iap:api_version"
+            android:value="5" />
     </application>
     <uses-permission android:name="android.permission.INTERNET" />
 </manifest>
