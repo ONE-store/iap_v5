@@ -48,6 +48,8 @@ namespace OneStore
 		public String type;
 		public String price;
 		public String title;
+        public String priceCurrencyCode;
+
 
 		public string ToString ()
 		{
@@ -56,6 +58,8 @@ namespace OneStore
 			sb.Append ("type: " + type + "\n");
 			sb.Append ("price: " + price + "\n");
 			sb.Append ("title: " + title + "\n");
+            sb.Append ("priceCurrencyCode: " + priceCurrencyCode + "\n");
+
 			return sb.ToString ();
 		}
 	}
